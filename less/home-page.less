@@ -16,21 +16,32 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     @media @mobile {
       flex-direction: column-reverse;
       align-content: center;
-      width: 100%;
+      text-align: center;
+      
     }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+        
+      }
 
       img {
         border-radius: 10px;
@@ -50,6 +61,7 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
     }
   }
 
@@ -72,12 +84,20 @@
     display: flex;
     justify-content: space-between;
     @media @mobile {
-      margin: 10%;
+      align-content: center;
+      flex-direction: column;
+      margin: 30px;
+      
+      
     }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 100%;
+        align-content: center;
+      }
     }
   }
 
